@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- I am writing a comment -->
+        <meta charset="UTF-8">
+        <meta name="description" content="About Brenden Wishlow">
+        <meta name="keywords" content="Web, Designer, Developer">
+        <meta name="author" content="Brenden Wishlow">
+        <!-- <meta http-equiv="refresh" content="30"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,600;1,400&family=Raleway:ital,wght@0,400;0,600;1,400&family=Xanh+Mono&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/mystyles.css">
+
+        <title>Contact</title>
+    </head>
+
+<body>
+
+    <!--Hamburger Menu-->
+    <div id="header">   
+        <header class="mobile">   
+         <a class="menu-icon" href="#menu">
+             <i class="fas fa-bars fa-2x"></i>
+         </a>
+         <ul id="menu">
+            <li>
+            <a class="Selected" href="../index.html">HOME</a>
+            </li>
+            <li>
+                <a href="../html/about.html">ABOUT</a>
+            </li>
+            <li>
+                <a href="../portfolio/resume.html">RÉSUMÉ</a>
+            </li>
+            <li>
+                <a href="../portfolio/index.html">PORTFOLIO</a>
+            </li>
+            <li>
+                <a href="contact.html">CONTACT</a>
+            </li>
+         </ul>
+        </header> 
+            <!-- Navigation Menu Bar-->
+            <!-- Fixed Nav Bar-->
+        <div class="navbar">
+            <header class="desktop">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="../html/about.html">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="../portfolio/resume.html">RÉSUMÉ</a>
+                    </li>
+                    <li>
+                        <a href="../portfolio/index.html">PORTFOLIO</a>
+                    </li>
+                    
+                    <li>
+                        <a href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+
+            </header>
+        </div>
+    </div>
+    
+    <div class="wrapper">
+        <div class="row">
+            <div class="leftcolumn">
+                <section>
+                    <h2 class="get-in-touch">Get in touch!</h2>   
+                    <form method="POST" action="mailto:wish0011@algonquinlive.com" method="GET" enctype="multipart/form-data">
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="lname">Last name:</label><br>
+                        <input type="text" id="lname" name="lname"><br><br>
+                        <label for="email">Email:</label><br>
+                        <input type="text" id="email" name="email"><br><br>
+                        <label for="phone">Phone Number:</label><br>
+                        <input type="text" id="phone" name="phone"><br><br>
+                        <label for="project">How can I help with your project?</label><br><br>
+                        <select name="project" id="project">
+                        <option value="graphic">Graphic Design</option>
+                        <option value="production">Production Design</option>
+                        <option value="ux">UX Design</option>
+                        <option value="web">Web Design</option>
+                        </select><br><br>
+                        <label for="how">Send me some details!</label><br>
+                        <textarea name="message" rows="10" cols="30"></textarea><br><br>
+                        <input class="submit" type="submit" value="Submit"><br>
+                    </form> 
+                </section>           
+            </div>
+            <div class="rightcolumn">
+                <section id="contact">
+                    <h2 class="contact-info">Contact Info</h2>
+                    <ul>
+                        <li>
+                            <a href = "mailto: brendenwishlow@me.com">Email</a> me
+                        </li>
+                        <li>
+                            Find me on <a href="https://www.linkedin.com/in/brendenwishlow/">LinkedIn</a>
+                        </li>
+                        <li>
+                            Call - (416) 525-9534
+                        </li>
+                    </ul>
+                
+        
+                <iframe class="iframe" src="../images/Brenden.gif" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </section>    
+
+            </div>
+        </div>
+
+    </div>    
+
+    <footer>
+        <p class="copyright">All Rights Reserved. © Copyright 2022</p>
+    </footer>
+
+    <!-- Hamburger Menu-->
+    <script src="js/mmenu.js"></script>
+
+    <script>
+         document.addEventListener(
+            "DOMContentLoaded", () => {
+                 new Mmenu( "#menu" );
+        }
+    );
+    </script>
+
+
+    <script src="https://kit.fontawesome.com/8b90f5c688.js" crossorigin="anonymous"></script>
+    
+    <script src="js/splide.min.js"></script>  
+
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function() {
+          var splide = new Splide( '.splide' );
+          splide.mount();
+        } );
+    </script>
+    
+    
+</body>
+</html>

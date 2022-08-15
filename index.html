@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Head -->
+        <meta charset="UTF-8">
+        <meta name="description" content="Brenden Wishlow's Resume">
+        <meta name="keywords" content="Web, Designer, Developer">
+        <meta name="author" content="Brenden Wishlow">
+        <!--<meta http-equiv="refresh" content="60"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,600;1,400&family=Raleway:ital,wght@0,400;0,600;1,400&family=Xanh+Mono&display=swap" rel="stylesheet">   
+        
+        <link rel="stylesheet" href="css/normalize.css">
+
+        <!--JavaScript Css page-->
+        <link rel="stylesheet" href="css/mmenu.css">
+        <!--Splide Slider-->
+        <link rel="stylesheet" href="css/splide.min.css">
+
+        <link rel="stylesheet" href="css/mystyles.css">
+       
+        <title>Brenden Wishlow's Web Portfolio</title>
+
+    </head>
+
+    <body class="landing-page">
+        <div id="page">
+
+           <!--Hamburger Menu-->
+            <div id="header">   
+                <header class="mobile">   
+                 <a class="menu-icon" href="#menu">
+                     <i class="fas fa-bars fa-2x"></i>
+                 </a>
+                 <ul id="menu">
+                    <li>
+                    <a class="Selected" href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="html/about.html">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="../portfolio/resume">RÉSUMÉ</a>
+                    </li>
+                    <li>
+                        <a href="portfolio/index.html">PORTFOLIO</a>
+                    </li>
+                    <li>
+                        <a href="html/contact.html">CONTACT</a>
+                    </li>
+                 </ul>
+                </header> 
+                    <!-- Navigation Menu Bar-->
+                    <!-- Fixed Nav Bar-->
+                <div class="navbar">
+                    <header class="desktop">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="index.html">HOME</a>
+                            </li>
+                            <li>
+                                <a href="html/about.html">ABOUT</a>
+                            </li>
+                            <li>
+                                <a href="../portfolio/resume.html">RÉSUMÉ</a>
+                            </li>
+                            <li>
+                                <a href="portfolio/index.html">PORTFOLIO</a>
+                            </li>
+                            
+                            <li>
+                                <a href="html/contact.html">CONTACT</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    </header>
+                </div>
+            </div><br>
+
+            <main>
+
+            <div class="wrapper">
+                    <img src="images/layer-51.png" alt="Gif of Keyboard, Name, and Profession" width="350">
+                    <!-- Added div class for Fixed Nav Bar-->
+                    <div class="main">
+                        
+                        <section class="intro">
+                            <p class="groove">Brenden Wishlow is a Multimedia Designer<br> with 8+ years of experience in Production Design and a background in UX Design, Graphic Design, and Web Design and Development.
+                            </p>
+                        </section>
+                    
+                    </div><br><br><br><br><hr>
+                  
+
+                <div class="services-page"> 
+                    <div class="services">
+                        <div class="card2" id="pd">
+                            <a class="portfolio-cards" href="../portfolio/prod-design.html">
+                                <i class="fa-solid fa-film fa-6x"></i>
+                                <h3 id="card-title"><u>PRODUCTION DESIGN</u></h3>
+                                <p class="prod-design">Visual Concept of Film: Sets, Locations, Costumes, Props, Lighting, and Effects.</p>
+                            </a>
+                        </div>
+                        <div class="card2" id="wd">
+                            <a class="portfolio-cards" href="../portfolio/web-design.html">
+                                <i class="fa-solid fa-laptop-code fa-6x"></i>
+                                <h3 id='card-title'><u>WEB DESIGN</u></h3>
+                                <p>Programming Languages:<br>HMTL, CSS, JavaScript, PHP.</p>
+                            </a>    
+                        </div>
+                        <div class="card2" id="gd">
+                            <a class="portfolio-cards" href="../portfolio/graphic-design.html">
+                                <i class="fa-solid fa-pen-ruler fa-6x"></i>
+                                <h3 id="card-title"><u>GRAPHIC DESIGN</u></h3>
+                                <p>Graphic Design Software:<br>Illustrator, InDesign, Photoshop.</p>
+                                <p>Logo Design and Branding</p>
+                            </a>
+                        </div>
+                        <div class="card2" id="uxd">
+                            <a class="portfolio-cards" href="../portfolio/ux-design.html">
+                                <i class="fa-solid fa-users-rectangle fa-6x"></i>
+                                <h3 id="card-title"><u>UX DESIGN</u></h3>
+                                <p>UX Design Software:<br>Adobe XD, Figma, Sketch.</p>
+                                <p>Prototyping, Wireframing, Mockups, User Research, and Usability Testing.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>    
+            </main>    
+
+                    <!-- Links to email and social media-->
+            <footer>
+                        
+
+                <p class="copyright">All Rights Reserved. © Copyright 2022</p>
+
+            </footer>
+            
+
+        </div>
+
+    <!-- Hamburger Menu-->
+    <script src="js/mmenu.js"></script>
+
+    <script>
+         document.addEventListener(
+            "DOMContentLoaded", () => {
+                 new Mmenu( "#menu" );
+        }
+    );
+    </script>
+
+
+    <script src="https://kit.fontawesome.com/8b90f5c688.js" crossorigin="anonymous"></script>
+    
+    <script src="js/splide.min.js"></script>  
+
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function() {
+          var splide = new Splide( '.splide' );
+          splide.mount();
+        } );
+    </script>
+    
+
+    </body>
+</html>
+

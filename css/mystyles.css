@@ -1,0 +1,701 @@
+
+html {
+    font-size: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Font from my Urban moodboard */
+
+body {
+    font-family: 'Raleway', Verdana, sans-serif;
+}
+
+.desktop {
+    display: none;
+}
+
+.mobile {
+    display: block;
+}
+
+/* Wrapper Element */
+
+.wrapper {
+    margin: 0 auto;
+    width: 100%
+}
+
+
+/* The navigation bar */
+
+/* Fixed positioning and z-index */
+
+.navbar {
+    
+    top: 0; 
+    width: 100%; 
+    z-index: 1;
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Change background on mouse-over */
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
+  
+  /* Main content */
+  .main {
+    margin-top: 2em; /* Add a top margin to avoid content overlay */
+  }
+
+
+/* h1 styling and specific class selector h1 styling */
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.profession {
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Colour scheme from Urban moodboard - Black, Dark grey, light grey, golden yellow */
+
+h2 {
+    font-size: 2rem;
+    text-decoration: underline;
+    font-style: italic;
+    color: rgb(67, 68, 66);
+}
+
+h3 {
+    font-size: 1.4rem;
+    color:rgb(98, 99, 96);
+}
+
+h4 {
+    font-size: 1.4rem;
+}
+/* Paragraph styling */
+
+p {
+    font-family: 'Overpass', Verdana, sans-serif;
+    line-height: 1.5;
+    font-size: 1.4rem;
+}
+
+p.groove {
+    border-style: groove;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: auto;
+    padding: 1.5rem;
+    color: lightgrey;
+    max-width: 45%;
+    font-family: 'Raleway', Verdana, sans-serif;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Responsive images */
+img { max-width: 100%; height: auto; }
+
+object {
+    max-width: 100%;
+    height: auto;
+}
+
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    background-color: rgb(236, 193, 0);
+    text-align: center;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+li {
+    font-size: 1.4rem;
+    padding: 0.5rem;
+    line-height: 125%;
+}
+
+/* a styling */
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 0.5em;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+ul {
+    list-style-type: square;
+    line-height: 1rem;
+}
+
+
+#references>section {
+    padding: 2rem;
+}
+
+aside {
+    background-color: rgb(211, 212, 214);
+    padding: 1.5rem;
+}
+
+aside h2 {
+    text-align: center;
+}
+
+aside section {
+    margin: 2rem;
+    padding: 1rem;
+}
+
+/* Relative positioning */
+
+aside section blockquote {
+    background: grey;
+    margin: 0;
+    padding: 1rem;
+    font-size: 1rem;
+    position: relative;
+}
+
+/* Absolute positioning */
+
+aside section blockquote i {
+    position: absolute;
+    right: 0rem;
+    top: 0rem;
+}
+
+aside section p {
+    text-align: right;
+}
+
+time {
+    font-size: 1.4rem;
+}
+
+/* <a> Styling */
+
+a {
+    color:rgb(236, 193, 0);
+}
+
+main a {
+    color: rgb(236, 193, 0);
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+footer a {
+    color: rgb(236, 193, 0);
+}
+
+#contact a {
+    color: rgb(236, 193, 0)
+}
+
+#contact a:hover {
+    color: black;
+    background-color: lightgrey;
+    padding: 1em;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+}
+
+
+.copyright {
+    font-size: 0.75rem;
+}
+/* Home Page */
+
+/* Flex Box */
+
+.flex-parent {
+    display: flex;
+    flex-direction: row;
+    background: lightgrey;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+.flex-item {
+    margin: 1rem;
+   
+}
+/*
+blockquote span {
+    background: whitesmoke;
+}
+/*
+
+/*
+.intro {
+    width: 23rem;
+    text-align: center;
+    margin: 0 auto;
+}
+*/
+/* Circle around the image - border-radius: 50%;
+*/
+
+/* Border around Image*/
+#about {
+    display: block;
+    border: 5px solid;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+/* Landing Page */
+
+.landing-page {
+    background-color: black;
+}
+
+/* About Page */
+
+/* Relative positioning - yellow square around the headings */
+
+.box {
+    background-color: rgb(236, 193, 0);
+    width: 4.25rem;
+    height: 4rem;
+}
+
+.about h2 {
+    position: relative;
+    bottom: 4.25rem;
+}
+
+.hobbies h2 {
+    position: relative;
+    bottom: 4.25rem;
+}
+
+.about p {
+    margin-top: -3rem;
+}
+
+.hobbies p {
+    margin-top: -3rem;
+}
+
+/* Floating images */
+
+#toronto {
+    float: left;
+    margin-right: 1rem;
+}
+
+#puerto-plata {
+    float: left;
+    margin-right: 1rem;
+}
+
+/* Portfolio Page */
+
+.portfolio-cards {
+    color: black;
+    text-decoration: none;
+}
+
+/* Contact Page */
+
+
+.leftcolumn {
+    background-color: lightgrey;
+}
+
+/* Transitions - Hover */
+
+.submit {
+    background: white;
+    color: black;
+    padding: 0.5em;
+    box-shadow: 3px 3px lightgrey;
+    margin-bottom: 1em;
+    transition: 0.5s ease-in-out;
+}
+
+.submit:hover {
+    background-color: rgb(236, 193, 0);
+    color: black;
+    padding: 1em;
+    font-weight: bold;
+    font-size: 1.25rem;
+    transform: translate(2rem);
+}
+
+.iframe:hover {
+    transform: scale(1.5);
+}
+
+
+/* Default settings */
+
+label {
+    font-size: 1.4rem;
+}
+
+input {
+    font-size: 1.4rem;
+    max-width: 100%
+}
+
+select {
+    font-size: 1.4rem;
+}
+
+textarea {
+    font-size: 1.4rem;
+    max-width: 100%;
+}
+
+iframe {
+    display: none;
+}
+
+/* Resume Page */
+
+#experience {
+    padding-left: 2rem;
+}
+
+/* Services Page */
+
+.services {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1rem;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: center;
+}
+
+
+.services .card {
+    display: inline-flex;
+    flex: 25%;
+    flex-direction: column;
+    border: 5px solid black;
+    background-color: rgb(236, 236, 236);
+    padding: 1rem;
+    margin: 0.5rem;
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 25%;
+    text-align: center;
+    box-shadow: 1px 4px 4px grey;
+}
+
+.services .card2 {
+    display: inline-flex;
+    flex: 25%;
+    flex-direction: column;
+    border: 5px solid rgb(236, 193, 0);
+    background-color: lightgray;
+    padding: 1rem;
+    margin: 0.5rem;
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 25%;
+    text-align: center;
+   
+}
+
+.fa-solid {
+    color: rgb(67, 68, 66);
+}
+
+#instructions {
+    text-align: center;
+    font-family: 'Vujahday Script', cursive;
+    font-size: 1.75rem;
+}
+
+#card-title {
+    font-size: 1.75rem;
+    color: black;
+}
+
+div#pd   {
+    order: 4;
+}
+div#wd  {order: 1;}
+div#uxd   {order: 2;}
+div#gd  {order: 3;}
+
+/* Single Project */
+
+.single-proj {
+    text-align: center;
+}
+
+/* Media Queries */
+
+/* Landscape Mobile and Portrait Tablet*/
+
+@media only screen and (min-width: 30em) {
+    
+    .leftcolumn .rightcolumn {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    h1 h2 {
+        font-size: 2.2rem;
+    }
+    p {
+        font-size: 1.4rem;
+    }
+    li {
+        font-size: 1.4rem;
+    }
+    label {
+        font-size: 1.4rem;
+    }
+    input {
+        font-size: 1.4rem;
+    }
+    select {
+        font-size: 1.4rem;
+    }
+    textarea {
+        font-size: 1.4rem;
+    }
+    iframe {
+        display: none;
+    }
+}
+
+/* RETINA PORTRAIT TABLET, LANDSCAPE TABLETS AND NARROW DESKTOP */
+
+@media only screen and (min-width: 48em) {
+    .leftcolumn {
+        float: left;
+        width: 50%;
+        padding: 1rem;
+    }
+    
+    .rightcolumn {
+        float: left;
+        width: 50%;
+        padding: 1rem;
+    }
+
+    .wrapper {
+        max-width: 80%;
+    }
+
+    h1 h2 {
+        font-size: 2.8rem;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+    li {
+        font-size: 1.2rem;
+    }
+    label {
+        font-size: 1.2rem;
+    }
+    input {
+        font-size: 1.2rem;
+    }
+    select {
+        font-size: 1.2rem;
+    }
+    textarea {
+        font-size: 1.2rem;
+    }
+    iframe {
+        display: block;
+    }
+}
+
+
+/* RETINA PORTRAIT TABLET, LANDSCAPE TABLETS AND NARROW DESKTOP */
+
+@media only screen and (min-width: 60em) {
+    .leftcolumn {
+        float: left;
+        width: 50%;
+        padding: 1rem;
+    }
+    
+    .rightcolumn {
+        float: left;
+        width: 50%;
+        padding: 1rem;
+    }
+    
+    .wrapper {
+       max-width: 80%;
+    }
+
+    h1 h2 {
+        font-size: 3.2rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    li {
+        font-size: 1rem;
+    }
+    label {
+        font-size: 1rem;
+    }
+    input {
+        font-size: 1rem;
+    }
+    select {
+        font-size: 1rem;
+    }
+    textarea {
+        font-size: 1rem;
+    }
+    iframe {
+        display: block;
+    }
+    .single-proj {
+        grid-template-areas:
+        'top top top'
+        'menu middle right'
+        'empty bottom right'
+        'empty left right';
+    }
+}
+
+/* WIDESCREEN DESKTOP */
+
+@media only screen and (min-width: 72.5em) {
+    .leftcolumn {
+        float: left;
+        width: 50%;
+        padding: 1rem;
+    }
+    
+    .rightcolumn {
+        float: left;
+        width: 50%;
+        padding: 1rem;
+    }
+    
+    .wrapper {
+       max-width: 70%;
+    }
+
+    h1 h2 {
+        font-size: 3.4rem;
+    }
+    p {
+        font-size: 1.1rem;
+    }
+    li {
+        font-size: 1.1rem;
+    }
+    label {
+        font-size: 1.1rem;
+    }
+    input {
+        font-size: 1.1rem;
+    }
+    select {
+        font-size: 1.1rem;
+    }
+    textarea {
+        font-size: 1.1rem;
+    }
+    iframe {
+        display: block;
+    }
+
+    .single-proj {
+        grid-template-areas:
+        'top top top'
+        'menu middle right'
+        'empty bottom right'
+        'empty left right';
+    }
+}
+
+
+/** Hamburger Menu for mobile **/
+
+@media only screen and (min-width: 480px) {
+    nav ul li {
+        display: inline-block;}
+    .desktop {
+        display: block;
+    }
+    .mobile {
+        display: none;
+    }
+}
+
+
+
+
+/* Overiding inline
+img {
+    display: block;
+}
+*/
+
+/* Background image behind heading
+#education h2 {
+    margin: ;
+    text-align: ;
+    padding: 
+    font-size:
+    text-shadow:
+
+    background-color: ;
+    background-image: url();
+    background-size: cover;
+    background-position: 0 - 100px;
+    opacity: 
+} */
